@@ -7,5 +7,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="employeesFlow" doc:id="0b0bc653-321f-4d48-a157-80da58d2e896" >
 		<http:listener doc:name="Listener" doc:id="08368b66-380e-4c2f-8fcd-454a4e5a0e44" config-ref="HTTP_Listener_config" path="/employees"/>
 		<set-payload value="This will give u details of all employess" doc:name="Set Payload" doc:id="2456c6be-59a2-4d0c-94f2-50953008298c" />
+		<logger level="INFO" doc:name="Logger" doc:id="a84afced-2496-48a3-b2e9-95004a6632ef" />
 	</flow>
 </mule>
